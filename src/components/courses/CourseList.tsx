@@ -1,4 +1,3 @@
-// app/components/courses/CourseList.tsx
 'use client'
 
 import CourseCard from './CourseCard'
