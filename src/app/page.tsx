@@ -1,4 +1,6 @@
+import CourseList from '@/components/courses/CourseList'
 import CourseFilter from '@/components/filters/CourseFilter'
+import { mockCourses } from '@/constant/mockCourses'
 
 export default function HomePage() {
   return (
@@ -18,13 +20,9 @@ export default function HomePage() {
       {/* Filter Section */}
       <CourseFilter />
 
-      {/* Placeholder for course list */}
-      <section className='bg-gray-50 min-h-screen'>
-        <div className='max-w-7xl mx-auto px-4 py-8'>
-          <p className='text-gray-500 text-center'>
-            강의 목록이 여기에 표시됩니다.
-          </p>
-        </div>
+      {/* Course List Section */}
+      <section className='min-h-screen'>
+        <CourseList courses={mockCourses} />
       </section>
     </main>
   )
